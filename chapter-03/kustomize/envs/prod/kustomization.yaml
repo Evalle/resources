@@ -4,6 +4,9 @@ kind: Kustomization
 bases:
 - ../../base
 
+patchesStrategicMerge:
+- replica_count.yaml
+
 images:
 - name: gitopsbook/sample-app
-  newTag: v0.1
+  newTag: v0.2

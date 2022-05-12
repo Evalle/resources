@@ -6,7 +6,8 @@ bases:                        #A
 
 patchesStrategicMerge:
 - debug.yaml                  #B
-
+- replica_count.yaml
+  
 images:                       #C
 - name: gitopsbook/sample-app
   newTag: v0.2
