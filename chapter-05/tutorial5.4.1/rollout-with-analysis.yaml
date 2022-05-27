@@ -11,7 +11,8 @@ spec:
   strategy:
     canary:
       analysis:
-        templateName: pass
+        templates:
+        - templateName: fail
       steps:
       - setWeight: 10
       - pause:
